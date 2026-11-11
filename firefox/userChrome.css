@@ -1,0 +1,83 @@
+/* Automatically hide consecutive blank separators globally */
+menuseparator + menuseparator {
+    display: none !important;
+}
+
+/* Also hide a separator if it ends up being the very first or last item */
+menupopup > menuseparator:first-child,
+menupopup > menuseparator:last-child {
+    display: none !important;
+}
+
+/* Hide "Show Controls" */
+#context-media-showcontrols,
+#context-media-hidecontrols { display: none !important; }
+
+/* Hide "Pause" and "Play" */
+#context-media-pause,
+#context-media-play { display: none !important; }
+
+/* Hide "Mute" and "Unmute" */
+#context-media-mute,
+#context-media-unmute { display: none !important; }
+
+/* Hide "Speed" */
+#context-media-playbackrate { display: none !important; }
+
+/* Hide "Loop" */
+#context-media-loop { display: none !important; }
+
+/* Hide "Full Screen" */
+#context-video-fullscreen { display: none !important; }
+
+/* Hide "Watch in Picture-in-Picture" */
+#context-video-pictureinpicture { display: none !important; }
+
+/* Hide "Open Link in New Container Tab" */
+#context-openlinkinusercontext-menu { display: none !important; }
+
+/* Hide "Inspect Accessibility Properties" */
+#context-inspect-a11y { display: none !important; }
+
+/* Hide the separator above the media playback controls */
+#context-media-sep-commands { display: none !important; }
+
+/* Optional: Hide the separator below "Send Link to Device" if you hid that option too */
+#context-sep-sendlinktodevice { display: none !important; }
+
+/* Hide "Open Link in New Private Window" */
+#context-openlinkprivate { display: none !important; }
+
+/* Hide "Bookmark Link..." */
+#context-bookmarklink { display: none !important; }
+
+/* Hide "Save Link As..." */
+#context-savelink { display: none !important; }
+
+/* Hide "Take Snapshot..." */
+#context-video-saveimage { display: none !important; }
+
+/* Hide "Email Video..." */
+#context-sendvideo { display: none !important; }
+
+/* Hide "Ask an AI Chatbot" */
+#context-ask-chatbot { display: none !important; }
+
+/* Hide "Email Image..." */
+#context-sendimage { display: none !important; }
+
+/* Hide "Preview Link" (targets both standard ID and extension labels) */
+#context-previewlink,
+menuitem[label^="Preview Link"] { display: none !important; }
+
+/* Hide standard "Copy Link" (Keeps the privacy-friendly version) */
+#context-copylink { display: none !important; }
+
+/* Hide "Set Image as Desktop Background..." */
+#context-setDesktopBackground { display: none !important; }
+
+/* Hide the separator left behind by the Desktop Background option */
+#context-sep-setbackground { display: none !important; }
+
+/* Hide "Open Image in New Tab" */
+#context-viewimage { display: none !important; }
